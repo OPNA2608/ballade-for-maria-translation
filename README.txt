@@ -19,3 +19,9 @@ Suggestions & improvements are appreciated, but LLM output/help will be rejected
 3. Adjust the .gitignore setup accordingly.
 
 For compiling everything back into ADV engine files, run: `scripts/compile.sh`. The resulting tree should be in the newly created `dist` directory.
+
+### CD version
+
+Boot floppy + CD. CD has the game's data files (scripts, graphics) packed into `maria.{000,001,002,...,045}` files on a data track, and the CD-DA OST in audio tracks.
+
+If it's possible to undo & redo the data file packaging, and make a new disc image with the same track layout, then porting the script back into the CD release might be possible. Have not seriously investigated this however.
