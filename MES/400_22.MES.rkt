@@ -1,0 +1,55 @@
+(mes
+ (meta (engine 'ADV) (charset "pc98") (extraop #t))
+ (seg*
+  (cmd:204 100 199)
+  (if (</> (// (? (!= M 3)) (nop@) (sound ' 2))))
+  (cmd:209 0 2)
+  (image-file "gpc¥wall1.gpc")
+  (image-mem 0)
+  (image-file "gpc¥wall2.gpc")
+  (image-mem 0)
+  (image-file "gpc¥win_m.gpc")
+  (image-mem 1 0)
+  (exec-mem 256 11 1 58 36 1 2 0 2560 2560 1 1)
+  (image-file "b:¥gpc¥b26.gpc")
+  (image-mem 0)
+  (if (</>
+       (//
+        (? (!= M 3))
+        (nop@)
+        (sound ' 0)
+        (sound ' "uso¥ap_03.uso")
+        (sound ' 1)
+        (set-var M 3))))
+  (cmd:209 1 2)
+  (text-color 0 2 2)
+  (text-frame 14 328 69 383)
+  (cmd:203 1 1)
+  (if (</>
+       (//
+        (? (= 714 #t))
+        (text "ティムはいないのか。もう田舎に帰ったんだろうか？"))
+       (//
+        (? (= 793 #t) (= 509 #f))
+        (text "ティムの姿はない")
+        (text-raw 60393 60393 60393)
+        (text "まさか、シンディの事を気に病んで、自殺でも")
+        (text-raw 60393 60393 60393)
+        (text "そんな事にならないよう祈るしかないな。")
+        (set-reg 509 #t))
+       (//
+        (? (= 792 #f) (= 702 #t))
+        (text "ティムはまだＦＬＩＸから帰ってきていないようだ。"))
+       (//
+        (? (= 508 #f))
+        (text "誰もいないようだ。ティムはどこに行ってしまったんだろう。")
+        (set-reg 508 #t))
+       (//
+        (text "まだ戻ってないのか")
+        (text-raw 60393 60393 60393)
+        (text "一体どこに行ってしまったのかな？仕方ない、他を当たってみるか。"))))
+  (cmd:203 1 0)
+  (exec-mem 12288 0 20 (bytes 235 186) 72 368 0 1021 2)
+  (text-frame 8 308 69 383)
+  (cmd:203 1 1)
+  (mes-jump "b:¥mes¥4_map.mes")))

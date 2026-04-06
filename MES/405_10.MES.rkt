@@ -1,0 +1,45 @@
+(mes
+ (meta (engine 'ADV) (charset "pc98") (extraop #t))
+ (seg*
+  (if (</> (// (? (!= M 3)) (nop@) (sound ' 2))))
+  (cmd:209 0 2)
+  (image-file "gpc¥wall1.gpc")
+  (image-mem 0)
+  (image-file "gpc¥wall2.gpc")
+  (image-mem 0)
+  (image-file "gpc¥win_m.gpc")
+  (image-mem 1 0)
+  (exec-mem 256 11 1 58 36 1 2 0 2560 2560 1 1)
+  (image-file "gpc¥b09.gpc")
+  (image-mem 0)
+  (if (</>
+       (//
+        (? (!= M 3))
+        (nop@)
+        (sound ' 0)
+        (sound ' "uso¥ap_03.uso")
+        (sound ' 1)
+        (set-var M 3))))
+  (cmd:209 1 2)
+  (delay 50)
+  (mes-load? "mes¥win_c.mec" 4096)
+  (set-var A 1)
+  (mes-load? 4096)
+  (text-color 0 2 2)
+  (text-frame 14 328 69 383)
+  (cmd:203 1 1)
+  (branch-reg 225
+   (</>
+    (/
+     (text "メリルはいないようだ。")
+     (proc 18)
+     (text "仕方がないな、出直して来るとしよう")
+     (text-raw 60393 60393 60393)
+     (set-reg 225 #t))
+    (/
+     (text "まだ戻っていないのか？　仕方ない人だなぁ、どこに行ってしまったんだろう。"))))
+  (cmd:203 1 0)
+  (exec-mem 12288 0 20 (bytes 235 186) 72 368 0 1021 2)
+  (text-frame 8 308 69 383)
+  (cmd:203 1 1)
+  (mes-jump "b:¥mes¥4_map.mes")))

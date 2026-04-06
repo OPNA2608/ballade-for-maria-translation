@@ -1,0 +1,47 @@
+(mes
+ (meta (engine 'ADV) (charset "pc98") (extraop #t))
+ (seg*
+  (if (</> (// (? (!= M 3)) (nop@) (sound ' 2))))
+  (cmd:209 0 2)
+  (image-file "gpc¥wall1.gpc")
+  (image-mem 0)
+  (image-file "gpc¥wall2.gpc")
+  (image-mem 0)
+  (image-file "gpc¥win_m.gpc")
+  (image-mem 1 0)
+  (exec-mem 256 11 1 58 36 1 2 0 2560 2560 1 1)
+  (image-file "b:¥gpc¥b26.gpc")
+  (image-mem 0)
+  (if (</>
+       (//
+        (? (!= M 3))
+        (nop@)
+        (sound ' 0)
+        (sound ' "uso¥ap_03.uso")
+        (sound ' 1)
+        (set-var M 3))))
+  (cmd:209 1 2)
+  (text-color 0 2 2)
+  (text-frame 14 328 69 383)
+  (cmd:203 1 1)
+  (if (</>
+       (//
+        (? (= 304 #f))
+        (text "シンディに教えられたティムの家を訪ねたが、あいにくと留守だった")
+        (text-raw 60393 60393 60393)
+        (set-reg 304 #t))
+       (//
+        (? (= 305 #f))
+        (text "ティムの家はアベニューＡという、夜の一人歩きには適さない地区にあった。")
+        (proc 18)
+        (text "家を訪ねてみたが残念ながら外出しているようだ。")
+        (set-reg 305 #t))
+       (//
+        (text "ティムの家を訪ねたが、不在だった。シンディと話をしたかったのに残念だ。")
+        (set-reg 304 #f)
+        (set-reg 305 #f))))
+  (cmd:203 1 0)
+  (exec-mem 12288 0 20 (bytes 235 186) 72 368 0 1021 2)
+  (text-frame 8 308 69 383)
+  (cmd:203 1 1)
+  (mes-jump "b:¥mes¥2_map.mes")))

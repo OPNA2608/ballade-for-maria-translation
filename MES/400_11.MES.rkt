@@ -1,0 +1,56 @@
+(mes
+ (meta (engine 'ADV) (charset "pc98") (extraop #t))
+ (seg*
+  (if (</> (// (? (!= M 3)) (nop@) (sound ' 2))))
+  (cmd:209 0 2)
+  (image-file "gpc¥wall1.gpc")
+  (image-mem 0)
+  (image-file "gpc¥wall2.gpc")
+  (image-mem 0)
+  (image-file "gpc¥win_m.gpc")
+  (image-mem 1)
+  (exec-mem 256 11 1 58 36 1 2 0 2560 2560 1 1)
+  (image-file "gpc¥b18.gpc")
+  (image-mem 0)
+  (if (</>
+       (//
+        (? (!= M 3))
+        (nop@)
+        (sound ' 0)
+        (sound ' "uso¥ap_03.uso")
+        (sound ' 1)
+        (set-var M 3))))
+  (cmd:209 1 2)
+  (text-color 0 2 2)
+  (text-frame 14 328 69 383)
+  (cmd:203 1 1)
+  (if (</>
+       (//
+        (? (= 794 #t) (= 504 #f))
+        (text "ギュンターは留守のようだ。また出直して来るか")
+        (text-raw 60393 60393 60393)
+        (set-reg 504 #t))
+       (//
+        (? (= 794 #t) (= 505 #f))
+        (text "ギュンターは戻ってないようだ。何処に行ってしまったのか" 'br)
+        (text "なぁ。")
+        (set-reg 505 #t))
+       (//
+        (? (= 794 #t))
+        (text "まだ帰っていない。旅行にでも行ったのかな？")
+        (set-reg 504 #f)
+        (set-reg 505 #f))
+       (//
+        (? (= 506 #f))
+        (text "ギュンターはあいにく留守だった")
+        (text-raw 60393 60393 60393)
+        (text "何処に行ってしまったんだろう。")
+        (set-reg 506 #t))
+       (//
+        (text "ギュンターはまだ戻っていない。")
+        (set-reg 506 #f))))
+  (cmd:203 1 0)
+  (exec-mem 12288 0 20 (bytes 235 186) 72 368 0 1021 2)
+  (text-frame 8 308 69 383)
+  (cmd:203 1 1)
+  (mes-jump "b:¥mes¥4_map.mes")))
