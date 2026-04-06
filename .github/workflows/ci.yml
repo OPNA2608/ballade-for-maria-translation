@@ -1,0 +1,51 @@
+name: Build
+
+on:
+  push:
+    branches: main
+    tags: 'v*'
+  pull_request:
+    branches: main
+
+env:
+  # lime-juice has no license listed, treated as unfree software
+  NIXPKGS_ALLOW_UNFREE: 1
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  precommit:
+    name: "pre-commit run --all-files"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install Nix
+        uses: cachix/install-nix-action@v31.9.1
+
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: pre-commit run --all-files
+        id: run-formatters
+        run: |
+          if ! nix-shell --run 'pre-commit run --all-files'; then
+            git diff
+            exit 1
+          fi
+
+  build:
+    name: "build"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install Nix
+        uses: cachix/install-nix-action@v31.9.1
+
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Build
+        run: |
+          nix-build --no-out-link

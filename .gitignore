@@ -9,6 +9,8 @@
 !.pre-commit-config.yaml
 !*.nix
 !version
+# Dir for GitHub stuff
+!.github/
 # Scripts
 !scripts
 # ADV scripts
