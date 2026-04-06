@@ -1,3 +1,5 @@
+; Ballade for Maria (PC-98) - START.MES
+; Game entry point
 (mes
  (meta (engine 'ADV) (charset "pc98") (extraop #t))
  (seg*

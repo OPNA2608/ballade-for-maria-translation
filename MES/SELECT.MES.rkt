@@ -1,3 +1,5 @@
+; Ballade for Maria (PC-98) - SELECT.MES
+; Select screen (skipped if some things haven't been marked achieved in save data yet)
 (mes
  (meta (engine 'ADV) (charset "pc98") (extraop #t))
  (seg*
