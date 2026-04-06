@@ -4,6 +4,11 @@
 !.gitignore
 # The README
 !README.txt
+# Files that make things more consistent
+!.editorconfig
+!.pre-commit-config.yaml
+!*.nix
+!version
 # Scripts
 !scripts
 # ADV scripts
