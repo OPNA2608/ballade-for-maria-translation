@@ -6,6 +6,8 @@
 !README.txt
 # Original files' checksums
 !checksums.sha256
+# Character profiles
+!profiles/
 # Files that make things more consistent
 !.editorconfig
 !.pre-commit-config.yaml

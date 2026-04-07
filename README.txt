@@ -1,10 +1,13 @@
 This is a WIP translation of the 1995 PC-98 game "Ballade for Maria", developed by Fairytale Hardcover and published by IDES. I do not understand much Japanese, so this is currently being done by throwing the lines at machine translation services to get a rough translation of the game's script.
 
+Avoid the `profiles` directory if you care about possible spoilers.
+
 TODO:
 
 - [x] Proof of concept
       000.MES is machine-translated.
-- [ ] Get a rough translation of the game's entire script
+- [ ] Get a rough translation of the game's entire script & fill out character profiles
+      The latter should be useful for figuring out some consistent ways of handling different characters.
 - [ ] Go over the script and make it less bad
       1:1 machine translation sucks.
 - [ ] Fix formatting
