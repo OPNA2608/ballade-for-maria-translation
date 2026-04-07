@@ -2,5 +2,6 @@
 *
 # Except this file
 !.gitignore
-# And graphviz graphics
+# And graphviz graph descriptions + images
 !*.dot
+!*.svg
