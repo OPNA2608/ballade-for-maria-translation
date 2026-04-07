@@ -1,5 +1,8 @@
 ; Ballade for Maria (PC-98) - 000.MES
 ; Opening
+; Actors:
+; - Charlie
+; - Nameless(?) escort
 (mes
  (meta (engine 'ADV) (charset "pc98") (extraop #t))
  (seg*
@@ -93,8 +96,9 @@
   (cmd:209 1)
   (exec-mem 17664 4 0 75 113 12 0)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "この部屋？　なんか凄いじゃん")
-  ;(text-raw 60520 60520 60520) ; 60520: …
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "ここって確か高いんだよねぇ？" '60519)
   (str "This room? It's amazing")
   (text-raw 60520 60520 60520)
@@ -104,8 +108,9 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Charlie
   ;(text "別に")
-  ;(text-raw 60520 60520 60520 60520 60519) ; 60519: ??? | 60520: …
+  ;(text-raw 60520 60520 60520 60520 60519) ; 60520: ·
   (str "Not really")
   (text-raw 60520 60520 60520 60520 60519)
   (exec-mem 12288 0 20 (bytes 235 186) 74 384 0 1021 1)
@@ -113,8 +118,9 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "だって")
-  ;(text-raw 60520 60520 60520 60520) ; 60520: …
+  ;(text-raw 60520 60520 60520 60520) ; 60520: ·
   ;(text "うわぁ、景色もサイコーじゃん！　いいなぁ、こんなトコに住めて。" '60519)
   (str "Because")
   (text-raw 60520 60520 60520 60520)
@@ -124,6 +130,7 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Charlie
   ;(text "だったら、住めば？" '60519)
   (str "Well, then why don't you just live there?" '60519)
   (exec-mem 12288 0 20 (bytes 235 186) 74 384 0 1021 1)
@@ -131,8 +138,9 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "無茶言わないでよぉ")
-  ;(text-raw 60520 60520 60520) ; 60520: …
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "それとも、今日からここへ住んで" 'br)
   ;(text "いいって言うの？　な" '60517) ; '60517: ~
   ;(text "んてね。" '60519)
@@ -146,6 +154,7 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Charlie
   ;(text "そんなに気に入った？" '60519)
   (str "Did you like it that much?" '60519)
   (exec-mem 12288 0 20 (bytes 235 186) 74 384 0 1021 1)
@@ -153,9 +162,10 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
-  ;(text-raw 60520 60520 60520 60520 60520 60520) ; 60520: …
+  ; Actor: Nameless(?) escort
+  ;(text-raw 60520 60520 60520 60520 60520 60520) ; 60520: ·
   ;(text "うん。な、なんならさぁ、あんたの専属になってもいいよ")
-  ;(text-raw 60520 60520 60520) ; 60520: …
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "ダメかなぁ？" '60519)
   (text-raw 60520 60520 60520 60520 60520 60520)
   (str "Yeah. I mean, if you want, I could even become your personal escort")
@@ -166,8 +176,9 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Charlie
   ;(text "それは")
-  ;(text-raw 60520 60520 60520) ; 60520: …
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "そうだね、考えてみようか。" '60519)
   (str "Well")
   (text-raw 60520 60520 60520)
@@ -181,8 +192,9 @@
   (exec-mem 8192 "A 0")
   (exec-mem 17664 4 115 75 228 12 0)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "えっ！？　ほ、ホントに？　も、もしそうなったら")
-  ;(text-raw 60520 60520 60520) ; 60520: …
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "あ、あたし、なんだってしてあげるよ。" '60519)
   (str "Huh?! R-Really? I-if that happens")
   (text-raw 60520 60520 60520)
@@ -192,6 +204,7 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Charlie
   ;(text "もしそうなったら？　じゃあ今日はしてくれないの？" '60519)
   (str "What if that happened? So you won't do it today?" '60519)
   (exec-mem 12288 0 20 (bytes 235 186) 74 384 0 1021 1)
@@ -199,9 +212,11 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "あ、違うっ、そうじゃなくて")
-  ;(text-raw 60520 60520 60520) ; 60520: …
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "もうっ、チャーリーは意地悪だなぁ")
+  ;text-raw 60520 60520 60520 60519) ; 60520: ·
   (str "Oh, no, that's not it")
   (text-raw 60520 60520 60520)
   (str "Ugh, you're so mean Charlie")
@@ -211,13 +226,17 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: ?, just "......"
+  ;(text-raw 60520 60520 60520 60520 60520 60520 60519) ; 60520: ·
   (text-raw 60520 60520 60520 60520 60520 60520 60519)
   (exec-mem 12288 0 20 (bytes 235 186) 74 384 0 1021 1)
   (text-frame 11 344 75 399)
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "そんな目で見ないでよぉ。悪かったよ、ゴメン。今日だって、いいよ、好きなようにして")
+  ;(text-raw 60520 60520 60520 60520 60520 60520 60519) ; 60520: ·
   (str "Don't look at me like that. I'm sorry, I was wrong. It's okay today too, do whatever you want")
   (text-raw 60520 60520 60520 60520 60520 60520 60519)
   (exec-mem 12288 0 20 (bytes 235 186) 74 384 0 1021 1)
@@ -225,7 +244,8 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
-  ;(text-raw 60520 60520 60520) ; 60520: …
+  ; Actor: Charlie
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "好きにしていいんだね？" '60519)
   (text-raw 60520 60520 60520)
   (str "So I can do whatever I want?" '60519)
@@ -234,11 +254,13 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "うん。")
-  ;(text-raw 60520 60520 60520)
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "あ、でも")
-  ;(text-raw 60520 60520 60520)
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "痛いのはダメなんだ。縛られるのとか苦手で")
+  ;(text-raw 60520 60520 60520 60520 60520 60520 60519) ; 60520: ·
   (str "Yeah.")
   (text-raw 60520 60520 60520)
   (str "Oh, but")
@@ -250,10 +272,11 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Charlie
   ;(text "そう")
-  ;(text-raw 60520 60520 60520) ; 60520: …
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "それは残念だな")
-  ;(text-raw 60520 60520 60520 60519)
+  ;(text-raw 60520 60520 60520 60519) ; 60520: ·
   (str "Oh")
   (text-raw 60520 60520 60520)
   (str "That's a shame")
@@ -263,10 +286,11 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "あ、ウソ！　ウソだよ")
-  ;(text-raw 60520 60520)
+  ;(text-raw 60520 60520) ; 60520: ·
   ;(text "チャーリーは特別だから、いいよ。")
-  ;(text-raw 60520 60520)
+  ;(text-raw 60520 60520) ; 60520: ·
   ;(text "今日は、どんなことされたっていい。" '60519)
   (str "Oh, no way! I'm just kidding")
   (text-raw 60520 60520)
@@ -278,7 +302,8 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
-  ;(text-raw 60520 60520 60520 60520)
+  ; Actor: Charlie
+  ;(text-raw 60520 60520 60520 60520) ; 60520: ·
   ;(text "その言葉にウソはない？" '60519)
   (text-raw 60520 60520 60520 60520)
   (str "Is that true?" '60519)
@@ -287,8 +312,9 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "うん、だって")
-  ;(text-raw 60520 60520 60520 60520 60520 60520)
+  ;(text-raw 60520 60520 60520 60520 60520 60520) ; 60520: ·
   ;(text "だってチャーリーのためだもん。" '60519)
   (str "Yeah, because")
   (text-raw 60520 60520 60520 60520 60520 60520)
@@ -302,8 +328,9 @@
   (exec-mem 8192 "A 0")
   (exec-mem 17664 4 230 75 343 12 0)
   (proc 19)
+  ; Actor: Charlie
   ;(text "かわいい")
-  ;(text-raw 60520 60520 60520)
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "はじめて見た時から、可愛いと思ってた。" '60519)
   (str "So cute")
   (text-raw 60520 60520 60520)
@@ -313,12 +340,13 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "やだぁ、照れちゃうよそんなの")
-  ;(text-raw 60520 60520 60520)
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "そんな優しい言葉、あんまり、かけてもらったコトないからね")
-  ;(text-raw 60520 60520 60520)
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "やだなぁ")
-  ;(text-raw 60520 60520 60520 60519)
+  ;(text-raw 60520 60520 60520 60519) ; 60520: ·
   (str "Oh no, that's embarrassing")
   (text-raw 60520 60520 60520)
   (str "I've never really had anyone say such kind words to me before")
@@ -330,6 +358,7 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Charlie
   ;(text "もっと自分に自信を持ちなさい。" '60519)
   (str "Have more confidence in yourself." '60519)
   (exec-mem 12288 0 20 (bytes 235 186) 74 384 0 1021 1)
@@ -337,10 +366,11 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "そんな")
-  ;(text-raw 60520 60520 60520 60520)
+  ;(text-raw 60520 60520 60520 60520) ; 60520: ·
   ;(text "あたしなんか無理だよ")
-  ;(text-raw 60520 60520 60520 60519)
+  ;(text-raw 60520 60520 60520 60519) ; 60520: ·
   (str "That's")
   (text-raw 60520 60520 60520 60520)
   (str "I can't do it")
@@ -350,6 +380,7 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Charlie
   ;(text "そんなことはない。美しい手をしている。" '60519)
   (str "That's not true. You have beautiful hands." '60519)
   (exec-mem 12288 0 20 (bytes 235 186) 74 384 0 1021 1)
@@ -357,10 +388,11 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "そんなことぉ")
-  ;(text-raw 60520 60520 60520)
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "だいたい何にもしてないんだよ、この手。でも")
-  ;(text-raw 60520 60520 60520)
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "なんか嬉しい。" '60519)
   (str "That's")
   (text-raw 60520 60520 60520)
@@ -372,13 +404,15 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
-  ;(text-raw 60520 60520 60520 60520 60520 60520 60520 60520 60519)
+  ; Actor: ?, just "........"
+  ;(text-raw 60520 60520 60520 60520 60520 60520 60520 60520 60519) ; 60520: ·
   (text-raw 60520 60520 60520 60520 60520 60520 60520 60520 60519)
   (exec-mem 12288 0 20 (bytes 235 186) 74 384 0 1021 1)
   (text-frame 11 344 75 399)
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "な、何をしてあげようか？　いきなりしゃぶって欲しい？" '60519)
   (str "So, what should I do for you? Do you want me to start sucking you off right away?" '60519)
   (exec-mem 12288 0 20 (bytes 235 186) 74 384 0 1021 1)
@@ -386,10 +420,11 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Charlie
   ;(text "その手")
-  ;(text-raw 60520 60520 60520 60520)
+  ;(text-raw 60520 60520 60520 60520) ; 60520: ·
   ;(text "その手が")
-  ;(text-raw 60520 60520 60520 60520 60520 60520 60519)
+  ;(text-raw 60520 60520 60520 60520 60520 60520 60519) ; 60520: ·
   (str "Those")
   (text-raw 60520 60520 60520 60520)
   (str "Those hands")
@@ -399,6 +434,7 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "手？　手でして欲しいの？" '60519)
   (str "My hands? You want me to do it with my hands?" '60519)
   (exec-mem 12288 0 20 (bytes 235 186) 74 384 0 1021 1)
@@ -406,8 +442,9 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Charlie
   ;(text "その手が欲しい")
-  ;(text-raw 60520 60520 60520 60519)
+  ;(text-raw 60520 60520 60520 60519) ; 60520: ·
   (str "I want those hands")
   (text-raw 60520 60520 60520 60519)
   (exec-mem 12288 0 20 (bytes 235 186) 74 384 0 1021 1)
@@ -423,7 +460,8 @@
   (cmd:209 1)
   (exec-mem 17664 4 0 75 167 12 0)
   (proc 19)
-  ;(text-raw 60520 60520 60520 60520)
+  ; Actor: Nameless(?) escort
+  ;(text-raw 60520 60520 60520 60520) ; 60520: ·
   ;(text "チャーリー？" '60519)
   (text-raw 60520 60520 60520 60520)
   (str "Charlie?" '60519)
@@ -432,8 +470,9 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Charlie
   ;(text "その美しい手を、永遠に")
-  ;(text-raw 60520 60520 60520 60520 60519)
+  ;(text-raw 60520 60520 60520 60520 60519) ; 60520: ·
   (str "Those beautiful hands, forever")
   (text-raw 60520 60520 60520 60520 60519)
   (exec-mem 12288 0 20 (bytes 235 186) 74 384 0 1021 1)
@@ -441,8 +480,9 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "えっ？　あたしバカだから")
-  ;(text-raw 60520 60520 60520)
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "なんだかよくわかんない。" '60519)
   (str "Huh? I'm stupid, so")
   (text-raw 60520 60520 60520)
@@ -452,8 +492,9 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Charlie
   ;(text "どうしたの？　顔が曇ってる")
-  ;(text-raw 60520 60520 60520 60519)
+  ;(text-raw 60520 60520 60520 60519) ; 60520: ·
   (str "What's wrong? You look down")
   (text-raw 60520 60520 60520 60519)
   (exec-mem 12288 0 20 (bytes 235 186) 74 384 0 1021 1)
@@ -461,12 +502,13 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "だって")
-  ;(text-raw 60520 60520 60520)
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "チャーリー")
-  ;(text-raw 60520 60520 60520 60520)
+  ;(text-raw 60520 60520 60520 60520) ; 60520: ·
   ;(text "あたしの手を")
-  ;(text-raw 60520 60520 60520 60520 60520 60520 60519)
+  ;(text-raw 60520 60520 60520 60520 60520 60520 60519) ; 60520: ·
   (str "Because")
   (text-raw 60520 60520 60520)
   (str "Charlie")
@@ -478,6 +520,7 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Charlie
   ;(text "褒めてはいけないもの？" '60519)
   (str "What shouldn't you praise?" '60519)
   (exec-mem 12288 0 20 (bytes 235 186) 74 384 0 1021 1)
@@ -485,14 +528,15 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "そ、そんな")
-  ;(text-raw 60520 60520 60520)
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "ね、チャーリー")
-  ;(text-raw 60520 60520 60520)
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "顔が")
-  ;(text-raw 60520 60520 60520)
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "ねぇ、何か何か怖いよ")
-  ;(text-raw 60520 60520 60520 60520 60519)
+  ;(text-raw 60520 60520 60520 60520 60519) ; 60520: ·
   (str "Th-that's")
   (text-raw 60520 60520 60520)
   (str "Hey, Charlie")
@@ -506,6 +550,7 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Charlie
   ;(text "怖い？　わたしの顔が？" '60519)
   (str "Are you scared? Of my face?" '60519)
   (exec-mem 12288 0 20 (bytes 235 186) 74 384 0 1021 1)
@@ -513,16 +558,17 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "チャーリー")
-  ;(text-raw 60520 60520)
+  ;(text-raw 60520 60520) ; 60520: ·
   ;(text "あっ、あたし")
-  ;(text-raw 60520 60520 60520)
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "そ、そうだ、約束があったんだ")
-  ;(text-raw 60520 60520 60520)
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "だから、帰して")
-  ;(text-raw 60520 60520 60520)
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "ねぇ、お願い")
-  ;(text-raw 60520 60520 60520 60519)
+  ;(text-raw 60520 60520 60520 60519) ; 60520: ·
   (str "Charlie")
   (text-raw 60520 60520)
   (str "Oh, I")
@@ -538,6 +584,7 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Charlie
   ;(text "今日はヒマだと言ってたね？" '60519)
   (str "Didn't you say you were free today?" '60519)
   (exec-mem 12288 0 20 (bytes 235 186) 74 384 0 1021 1)
@@ -550,10 +597,11 @@
   (exec-mem 4096 "COPY b:¥gpc¥op3c.gpc,GPC")
   (exec-mem 17664 4 168 75 343 12 0)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "チ、チャーリー")
-  ;(text-raw 60520 60520 60520)
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "ねぇお願い、お金なんていらない")
-  ;(text-raw 60520 60520 60519)
+  ;(text-raw 60520 60520 60519) ; 60520: ·
   (str "C-Charlie")
   (text-raw 60520 60520 60520)
   (str "Please, I don't need the money")
@@ -563,6 +611,7 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Charlie
   ;(text "そう？" '60519)
   (str "Is that so?" '60519)
   (exec-mem 12288 0 20 (bytes 235 186) 74 384 0 1021 1)
@@ -570,12 +619,13 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "だから帰して")
-  ;(text-raw 60520 60520 60520)
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "お願い")
-  ;(text-raw 60520 60520 60520)
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "い、いやぁっ！　そ、そんなもの")
-  ;(text-raw 60520 60520 60520)
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "そ、それで何を！？" '60519)
   (str "So let me go")
   (text-raw 60520 60520 60520)
@@ -589,6 +639,7 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Charlie
   ;(text "何を怖がっているの？" '60519)
   (str "What are you afraid of?" '60519)
   (exec-mem 12288 0 20 (bytes 235 186) 74 384 0 1021 1)
@@ -596,8 +647,9 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "チャーリー！　")
-  ;(text-raw 60520 60520 60520)
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "そ、それで何をするつもりなの！？" '60519)
   (str "Charlie! ")
   (text-raw 60520 60520 60520)
@@ -607,6 +659,7 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Charlie
   ;(text "いいこと。" '60519)
   (str "That's good." '60519)
   (exec-mem 12288 0 20 (bytes 235 186) 74 384 0 1021 1)
@@ -615,8 +668,9 @@
   (text-frame 13 364 68 399)
   (image-mem 0 0)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "い、いやっ！　お願い、そこから一歩も近寄らない")
-  ;(text-raw 60520 60520 60520 60520 60520)
+  ;(text-raw 60520 60520 60520 60520 60520) ; 60520: ·
   ;(text "いやあっ！　こっちに来ないでっ！！" '60519)
   (str "N-No! Please, don't come any closer")
   (text-raw 60520 60520 60520 60520 60520)
@@ -626,8 +680,9 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "あ、あたしっ")
-  ;(text-raw 60520 60520 60520)
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "いやっ、いやよぉっ！" '60519)
   (str "Oh, I")
   (text-raw 60520 60520 60520)
@@ -637,7 +692,8 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
-  ;(text-raw 60520 60520 60520 60520 60520 60520 60520)
+  ; Actor: Charlie
+  ;(text-raw 60520 60520 60520 60520 60520 60520 60520) ; 60520: ·
   ;(text "美しい手。" '60519)
   (text-raw 60520 60520 60520 60520 60520 60520 60520)
   (str "Beautiful hands." '60519)
@@ -646,8 +702,9 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "だめっ、それ以上")
-  ;(text-raw 60520 60520 60520 60520)
+  ;(text-raw 60520 60520 60520 60520) ; 60520: ·
   ;(text "いやっ、いやっ！" '60519)
   (str "No, no step further")
   (text-raw 60520 60520 60520 60520)
@@ -657,15 +714,17 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
-  ;(text-raw 60520 60520 60520 60520 60520 60520 60520 60520 60520 60520 60520 60520 60519)
+  ; Actor: ?, just "............"
+  ;(text-raw 60520 60520 60520 60520 60520 60520 60520 60520 60520 60520 60520 60520 60519) ; 60520: ·
   (text-raw 60520 60520 60520 60520 60520 60520 60520 60520 60520 60520 60520 60520 60519)
   (exec-mem 12288 0 20 (bytes 235 186) 74 384 0 1021 1)
   (text-frame 11 344 75 399)
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "誰かっ！　誰か助けてっ！　いや")
-  ;(text-raw 60514 60515 60516)
+  ;(text-raw 60514 60515 60516) ; 60514 60515 60516: makes a fancy elongated ~
   ;(text "っ！" '60519)
   (str "Someone! Someone help me! No")
   (text-raw 60514 60515 60516)
@@ -675,13 +734,15 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
-  ;(text-raw 60520 60520 60520 60520 60520 60520 60520 60520 60520 60520 60520 60520 60519)
+  ; Actor: ?, just "............"
+  ;(text-raw 60520 60520 60520 60520 60520 60520 60520 60520 60520 60520 60520 60520 60519) ; 60520: ·
   (text-raw 60520 60520 60520 60520 60520 60520 60520 60520 60520 60520 60520 60520 60519)
   (exec-mem 12288 0 20 (bytes 235 186) 74 384 0 1021 1)
   (text-frame 11 344 75 399)
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "いやよっ！　お願い、チャーリー！！！" 'br)
   ;(text "神様っ、神様ぁ！　いやっ、死にたくなんてないのぉ！" '60519)
   (str "No way! Charlie, please!!!" 'br)
@@ -691,8 +752,9 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Charlie?
   ;(text "全ては神のために")
-  ;(text-raw 60520 60520 60520 60520 60520 60520 60519)
+  ;(text-raw 60520 60520 60520 60520 60520 60520 60519) ; 60520: ·
   (str "In the name of God")
   (text-raw 60520 60520 60520 60520 60520 60520 60519)
   (exec-mem 12288 0 20 (bytes 235 186) 74 384 0 1021 1)
@@ -700,12 +762,13 @@
   (text-reset)
   (text-frame 13 364 68 399)
   (proc 19)
+  ; Actor: Nameless(?) escort
   ;(text "やっ、やだ、チャーリー？　")
-  ;(text-raw 60520 60520)
+  ;(text-raw 60520 60520) ; 60520: ·
   ;(text "お願い")
-  ;(text-raw 60520 60520 60520)
+  ;(text-raw 60520 60520 60520) ; 60520: ·
   ;(text "ねぇ")
-  ;(text-raw 60520 60520 60520 60520 60520)
+  ;(text-raw 60520 60520 60520 60520 60520) ; 60520: ·
   ;(text "いっ、いやあぁぁぁぁぁぁぁぁぁぁぁぁぁぁぁぁっっ！！！" '60519)
   (str "No, no, Charlie? ")
   (text-raw 60520 60520)
