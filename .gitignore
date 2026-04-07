@@ -4,6 +4,8 @@
 !.gitignore
 # The README
 !README.txt
+# Original files' checksums
+!checksums.sha256
 # Files that make things more consistent
 !.editorconfig
 !.pre-commit-config.yaml

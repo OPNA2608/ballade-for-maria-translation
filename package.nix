@@ -8,6 +8,10 @@ let
   pins = import ./pins.nix;
   srcs = [
     {
+      name = "checksums.sha256";
+      file = ./checksums.sha256;
+    }
+    {
       name = "scripts";
       file = ./scripts;
     }
