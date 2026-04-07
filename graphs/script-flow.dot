@@ -2,4 +2,14 @@ digraph {
   "START.MES" -> "SELECT.MES"
   "SELECT.MES" -> "000.MES"
   "000.MES" -> "001.MES"
+
+  "001.MES" -> "001_0.MES"
+  "001.MES" -> "001_1.MES"
+  "001.MES" -> "001_2.MES"
+  "001.MES" -> "001_3.MES"
+  "001.MES" -> "001_4.MES"
+  "001.MES" -> "001_5.MES"
+  "001.MES" -> "001_6.MES"
+  "001.MES" -> "001_7.MES"
+  "001.MES" -> "002.MES"
 }
