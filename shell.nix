@@ -12,6 +12,7 @@ pkgs.mkShell {
   packages =
     (with pkgs; [
       editorconfig-checker
+      graphviz
       nixfmt
       pre-commit
       racket-minimal

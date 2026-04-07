@@ -6,7 +6,8 @@
 !README.txt
 # Original files' checksums
 !checksums.sha256
-# Character profiles
+# Files to help with translation (character profiles, graphviz graphs)
+!graphs/
 !profiles/
 # Files that make things more consistent
 !.editorconfig
