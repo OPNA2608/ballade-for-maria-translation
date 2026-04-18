@@ -16,6 +16,9 @@ pkgs.mkShell {
       nixfmt
       pre-commit
       racket-minimal
+
+      # Testing
+      dosbox-x
     ])
     ++ [
       lime-juice
