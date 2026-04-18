@@ -1,7 +1,9 @@
 (mes
  (meta (engine 'ADV) (charset "pc98") (extraop #t))
  (seg*
-  (exec-mem 35072 "@0='ファーバー監督邸'")
+  ;(exec-mem 35072 "@0='ファーバー監督邸'")
+  ; Note: No nice apostrophes here, seemingly can't escape »'«
+  (exec-mem 35072 "@0='Farber Residence'")
   (define-proc 12 (<> (text "ジェイク")))
   (define-proc 13 (<> (text "メリル")))
   (define-proc 14 (<> (text "パトリシア")))

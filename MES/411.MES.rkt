@@ -218,6 +218,7 @@
       (text-frame 8 308 71 323)
       (proc 12)
       (proc 19)
+      ; ファーバー監督邸: Farber Residence
       (text "確かにね。ボストンのファーバー監督邸のパーティに招かれて以来なんだかよくないことが続く")
       (proc 15)
       (text-raw 60392)
