@@ -936,18 +936,32 @@
       (if (</>
            (//
             (? (= 110 #f))
-            (text "僕の事務所が６つは入りそうな広い部屋だ。")
+            ; Note: Look -> Around; ???
+            ; Not sure if register 110 can be #f at this point in the script.
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "僕の事務所が６つは入りそうな広い部屋だ。")
+            (str "It's a huge room, big enough to fit six of my offices.")
             (proc 18)
-            (text "僕の母はアメリカでも屈指の実業家の娘で、まだほんの子供の頃連れられて行った母の実家にはこんな部屋もあった。")
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "僕の母はアメリカでも屈指の実業家の娘で、まだほんの子供の頃連れられて行った母の実家にはこんな部屋もあった。")
+            (str "My mother, the daughter of one of America's leading businesspeople, took me to her family home when I was a very young child, which had a room like this.")
             (proc 18)
-            (text "だが、それ以来こんな広い部屋を持つ個人宅はお目にかかったことはない。")
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "だが、それ以来こんな広い部屋を持つ個人宅はお目にかかったことはない。")
+            (str "But since then, I've never seen a private home with a room this large.")
             (set-reg 110 #t))
            (//
             (? (= 111 #f))
-            (text "ニューヨークでこれだけの広さを求めるのは、事実上美術館でなければ無理だろうな。")
+            ; Note: Look -> Around; first time
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "ニューヨークでこれだけの広さを求めるのは、事実上美術館でなければ無理だろうな。")
+            (str "In New York, it would be practically impossible to find a space this large unless it were a museum.")
             (set-reg 111 #t))
            (//
-            (text "なんとなくハリウッドを垣間見たような気分だな。")))))
+            ; Note: Look -> Around; second+ time
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "なんとなくハリウッドを垣間見たような気分だな。")))))
+            (str "I feel like I've caught a glimpse of Hollywood.")))))
  (seg (? (= V 0) (= N 1))
       (if (</>
            (// (? (= 657 #t)) (nop@) (set-var V 4) (seg-call) (set-var V 0))))
@@ -965,13 +979,23 @@
             (text "単純に好奇心ともとれるが、そうでなければ何の目的があってそうしているのだろう？"))
            (//
             (? (= 113 #f))
+            ; Note: Look -> Yuriko; first time
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(proc 13)
+            ;(text "は")
+            ;(proc 14)
+            ;(text "と話がはずんでいるようだ。年が近いので話があうのかもしれないが、いったい何を話しているのやら。")
             (proc 13)
-            (text "は")
+            (str " and ")
             (proc 14)
-            (text "と話がはずんでいるようだ。年が近いので話があうのかもしれないが、いったい何を話しているのやら。")
+            (str " seem to be having a lively conversation. They're close in age, so maybe that's why they get along so well, but I wonder what they're talking about.")
             (set-reg 113 #t))
            (//
-            (text "よく見るとあちこちまわって歩いているようだが、何も問題を起こさないでくれればいいんだが")
+            ; Note: Look -> Yuriko; second+ time? (other branches?)
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "よく見るとあちこちまわって歩いているようだが、何も問題を起こさないでくれればいいんだが")
+            ;(text-raw 60393 60393)))))
+            (str "Looking closely, they seem to be wandering around quite a bit. I hope they don't cause any trouble")
             (text-raw 60393 60393)))))
  (seg (? (= V 0) (= N 2))
       (if (</>
@@ -999,13 +1023,21 @@
             (text "の誤解は早急に解いておかないと、後でひどい目にあいそうな予感がする。"))
            (//
             (? (= 116 #f))
-            (text "清楚なワンピースであることがこの場では妙に引き立つ結果を招いている。")
+            ; Note: Look -> Patricia; first time
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "清楚なワンピースであることがこの場では妙に引き立つ結果を招いている。")
+            (str "The fact that she's wearing a simple, elegant dress makes her stand out in a strange way in this setting.")
             (proc 18)
-            (text "いい意味で目をひくのだが、ゲストを招く側としては目立たぬ方がよいのではないだろうか？")
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "いい意味で目をひくのだが、ゲストを招く側としては目立たぬ方がよいのではないだろうか？")
+            (str "It's eye-catching in a good way, but wouldn't it be better for the host to be less conspicuous?")
             (set-reg 116 #t))
            (//
-            (text "少し理屈っぽい気もするが、性格のまっすぐないい娘のよう" 'br)
-            (text "だ。")))))
+            ; Note: Look -> Patricia; second+ time? (other branches?)
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "少し理屈っぽい気もするが、性格のまっすぐないい娘のよう" 'br)
+            ;(text "だ。")))))
+            (str "She seems a little argumentative, but she appears to be a good girl with a straightforward personality.")))))
  (seg (? (= V 0) (= N 3))
       (if (</>
            (// (? (= 657 #t)) (nop@) (set-var V 4) (seg-call) (set-var V 0))))
@@ -1019,10 +1051,17 @@
             (text "実は寂しい人だったりするのかもしれないな。"))
            (//
             (? (= 118 #f))
-            (text "傲慢そうな態度を崩さないが、あれもある意味で職業病のようなものなのだろうか。")
+            ; Note: Look -> Tony; first time
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "傲慢そうな態度を崩さないが、あれもある意味で職業病のようなものなのだろうか。")
+            (str "He maintains an arrogant attitude, but perhaps that just comes with the job.")
             (set-reg 118 #t))
            (//
-            (text "一人ぽつんと立っているのが気にかかるが")
+            ; Note: Look -> Tony; second+ time? (other branches?)
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "一人ぽつんと立っているのが気にかかるが")
+            ;(text-raw 60393 60393 60393)))))
+            (str "I'm a little worried about him standing there all alone")
             (text-raw 60393 60393 60393)))))
  (seg (? (= V 0) (= N 4))
       (if (</>
@@ -1045,15 +1084,27 @@
             (text "の事が心配なんだろうか？"))
            (//
             (? (= 120 #f))
+            ; Note: Look -> Gloria; first time
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(proc 16)
+            ;(text "と寄り添うように立っているのが")
+            ;(proc 15)
+            ;(text "・ウォン。")
+            ;(proc 16)
+            ;(text "のエージェントのチャイニーズだ。")
+            (str "Standing close to ")
             (proc 16)
-            (text "と寄り添うように立っているのが")
+            (str " is ")
             (proc 15)
-            (text "・ウォン。")
+            (str " Wong. ")
             (proc 16)
-            (text "のエージェントのチャイニーズだ。")
+            (str "'s Chinese agent.")
             (set-reg 120 #t))
            (//
-            (text "どこか人を寄せ付けない雰囲気のある女性だな。")))))
+            ; Note: Look -> Gloria; second+ time? (other branches?)
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "どこか人を寄せ付けない雰囲気のある女性だな。")))))
+            (str "She has a somewhat unapproachable aura about her.")))))
  (seg (? (= V 0) (= N 5))
       (if (</>
            (// (? (= 657 #t)) (nop@) (set-var V 4) (seg-call) (set-var V 0))))
@@ -1076,11 +1127,19 @@
             (text "少し同情を感じるな。"))
            (//
             (? (= 122 #f))
-            (text "遠めに見ても輝きが違う。やはり普通の女の子とは違う何かを持っているんだな。")
+            ; Note: Look -> Cindy; first time
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "遠めに見ても輝きが違う。やはり普通の女の子とは違う何かを持っているんだな。")
+            (str "Even from a distance, her energy is different. She definitely possesses something that sets her apart from ordinary girls.")
             (set-reg 122 #t))
            (//
+            ; Note: Look -> Cindy; second+ time? (other branches?)
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(proc 16)
+            ;(text "と話が出来ることだけでも今日のパーティは収穫あったって感じかな。")))))
+            (str "The mere opportunity to talk to ")
             (proc 16)
-            (text "と話が出来ることだけでも今日のパーティは収穫あったって感じかな。")))))
+            (str " made today's party worthwile.")))))
  (seg (? (= V 0) (= N 6))
       (if (</>
            (// (? (= 657 #f)) (nop@) (set-var V 5) (seg-call) (set-var V 0))))
@@ -1096,12 +1155,20 @@
             (text "ハリウッドの巨匠と言われる大物ではあるが、親しみやすい人物だな。"))
            (//
             (? (= 124 #f))
-            (text "温厚そうに見える監督だが、巷の噂では仕事の最中はかなりキツイ性格らしい。")
+            ; Note: Look -> Director Farber; first time
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "温厚そうに見える監督だが、巷の噂では仕事の最中はかなりキツイ性格らしい。")
+            (str "He may seem mild-mannered, but rumors suggest that the director has a very tough personality when it comes to work.")
             (proc 18)
-            (text "もっとも、仕事となれば誰しも多少の性格変化は生じるものだと思うのだが。")
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "もっとも、仕事となれば誰しも多少の性格変化は生じるものだと思うのだが。")
+            (str "But, I suppose everyone's personality changes somewhat when it comes to work.")
             (set-reg 124 #t))
            (//
-            (text "ファーバー監督は、ガイと何やら話し込んでいるようだ。")))))
+            ; Note: Look -> Director Farber; second+ time? (other branches?)
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "ファーバー監督は、ガイと何やら話し込んでいるようだ。")))))
+            (str "Director Farber seems to be deeply engaged in a conversation with Guy.")))))
  (seg (? (= V 0) (= N 7))
       (if (</>
            (// (? (= 657 #f)) (nop@) (set-var V 5) (seg-call) (set-var V 0))))
@@ -1119,14 +1186,24 @@
             (text "を避けるのでは、彼女が可哀想だ。"))
            (//
             (? (= 126 #f))
-            (text "ガイは監督に捕まっている。")
+            ; Note: Look -> Guy; first time
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "ガイは監督に捕まっている。")
+            (str "Guy seems to be stuck in a conversation with the director.")
             (proc 18)
-            (text "何を話しているのかは聞こえないが、かなり盛り上がっている様子が伺える。")
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "何を話しているのかは聞こえないが、かなり盛り上がっている様子が伺える。")
+            (str "I can't hear what they're talking about, but it seems like they're having a lively discussion.")
             (set-reg 126 #t))
            (//
-            (text "どうでもいいコトだが、少しは")
+            ; Note: Look -> Guy; second+ time? (other branches?)
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "どうでもいいコトだが、少しは")
+            ;(proc 17)
+            ;(text "に話しかけてやればいいのになぁ。")))))
+            (str "It's not important, but I wish he'd say something to ")
             (proc 17)
-            (text "に話しかけてやればいいのになぁ。")))))
+            (str ".")))))
  (seg (? (= V 0))
       (if (</>
            (// (? (= 657 #f)) (nop@) (set-var V 5) (seg-call) (set-var V 0))))
@@ -1145,11 +1222,18 @@
             (text "ガイの奴、一体何をやってるんだ。"))
            (//
             (? (= 128 #f))
+            ; Note: Look -> Kristy; first time
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(proc 17)
+            ;(text "は監督にガイをとられてひとりぼっちだ。しかし、不満一つ見せず、パーティに花を添えている。")
             (proc 17)
-            (text "は監督にガイをとられてひとりぼっちだ。しかし、不満一つ見せず、パーティに花を添えている。")
+            (str " is all alone now that the director has snatched Guy away from her. She doesn't show any signs of displeasure though, and adds to the party's charm.")
             (set-reg 128 #t))
            (//
-            (text "それにしても、今日は派手なドレスを着ているな。")))))
+            ; Note: Look -> Kristy; second+ time? (other branches?)
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "それにしても、今日は派手なドレスを着ているな。")))))
+            (str "She's certainly wearing a flashy dress today.")))))
  (seg (? (= V 1))
       (if (</>
            (//
@@ -1199,34 +1283,60 @@
       (if (</>
            (//
             (? (= 129 #f))
-            (text "こういうパーティは初めてだけど、撮影前の親睦会みたいなものってよく開かれるのだろうか？")
+            ; Note: Think -> Party; first time
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "こういうパーティは初めてだけど、撮影前の親睦会みたいなものってよく開かれるのだろうか？")
+            (str "This is my first time at a party like this. I wonder though, are get-togethers before filming like this a common occurrence?")
             (proc 18)
-            (text "ガイがこのまま俳優になったら、またこういう機会にめぐり合えるのかな。")
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "ガイがこのまま俳優になったら、またこういう機会にめぐり合えるのかな。")
+            (str "If Guy becomes an actor, I wonder if I'll get another opportunity to attend a party like this.")
             (set-reg 129 #t))
            (//
             (? (= 130 #f))
-            (text "間近で有名人を見れるなんて滅多にない機会だ。僕はミーハーではないが、やはり心踊る気分だ。")
+            ; Note: Think -> Party; second time
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "間近で有名人を見れるなんて滅多にない機会だ。僕はミーハーではないが、やはり心踊る気分だ。")
+            (str "It's a rare chance to see a celebrity up close. I'm not a fanboy, but it's exciting nonetheless.")
             (set-reg 130 #t))
            (//
-            (text "少しばかり居心地の悪さを感じていたりして")
+            ; Note: Think -> Party; third+ time
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "少しばかり居心地の悪さを感じていたりして")
+            ;(text-raw 60393 60393 60393)))))
+            (str "I'm also feeling a little uncomfortable though")
             (text-raw 60393 60393 60393)))))
  (seg (? (= V 2) (= N 1))
       (if (</>
            (//
             (? (= 131 #f))
-            (text "大リーガーのストーリーということでガイが出演することになった映画だけど、キャスティングは豪華なんだよなぁ。")
+            ; Note: Think -> Movies; first time
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "大リーガーのストーリーということでガイが出演することになった映画だけど、キャスティングは豪華なんだよなぁ。")
+            (str "Guy's in this movie because it's a story about a major league baseball player, but the rest of the cast is really impressive.")
             (set-reg 131 #t))
            (//
             (? (= 132 #f))
-            (text "これだけの豪華メンバーを集めると、それだけでヒットしそうな気がするのは素人だけなんだろうけど")
+            ; Note: Think -> Movies; second time
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "これだけの豪華メンバーを集めると、それだけでヒットしそうな気がするのは素人だけなんだろうけど")
+            ;(text-raw 60393 60393 60393 60393)
+            (str "With such a star-studded cast, it seems like it's bound to be a hit, but I guess that's just my amateur opinion")
             (text-raw 60393 60393 60393 60393)
             (proc 18)
-            (text "いったい予算はいくらなんだろう？")
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "いったい予算はいくらなんだろう？")
+            (str "I wonder how high the budget was?")
             (set-reg 132 #t))
            (//
-            (text "僕にもエキストラ出演の機会があったりし")
+            ; Note: Think -> Movies; third+ time
+            ; Actor: Jake Snipes (inner monologue / thought)
+            ;(text "僕にもエキストラ出演の機会があったりし")
+            ;(text-raw 60393 60393 60393)
+            ;(text "ないか。")))))
+            (str "I wonder if I'll have a chance to be an extra")
             (text-raw 60393 60393 60393)
-            (text "ないか。")))))
+            (str " probably not.")))))
  (seg (? (= V 2) (= N 2))
       (if (</>
            (//
