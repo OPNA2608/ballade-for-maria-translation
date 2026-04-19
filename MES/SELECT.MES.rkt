@@ -60,11 +60,11 @@
    ;(define-proc 3 (<> (text "　　ミュージックモード　　")))
    ;(define-proc 4
    ; (<> (str " ") (text "ショッキングシーンを見る") (str " ")))
-   (define-proc 0 (<> (str "  Start from the Opening  ")))
-   (define-proc 1 (<> (str " Continue from Quick-Save ")))
-   (define-proc 2 (<> (str "      Load Save File      ")))
-   (define-proc 3 (<> (str "        Music Mode        ")))
-   (define-proc 4 (<> (str "    Watch Death Scenes    ")))
+   (define-proc 0 (<> (str "Start from the Opening    ")))
+   (define-proc 1 (<> (str "Continue from Quick-Save  ")))
+   (define-proc 2 (<> (str "Load Save File            ")))
+   (define-proc 3 (<> (str "Music Mode                ")))
+   (define-proc 4 (<> (str "Watch Death Scenes        ")))
    (if (</>
         (//
          (? (= C 1))
